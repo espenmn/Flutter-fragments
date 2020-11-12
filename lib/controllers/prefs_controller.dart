@@ -7,7 +7,7 @@ class PrefsController extends GetxController {
   RxBool startSetting = false.obs;
 
   RxString alertSetting = ''.obs, // dont buzz at start
-      _yourAdr,
+      // _yourAdr,
       meters = '5'.obs,
       snooze = '2'.obs;
 

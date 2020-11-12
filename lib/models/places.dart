@@ -31,13 +31,13 @@ class Sight {
     this.dontAlertMe,
   });
 
-  Future get avstand async {
+  get avstand async {
     try {
       //pass
       Position position = await GeolocatorPlatform.instance.getCurrentPosition(
         desiredAccuracy: LocationAccuracy.best,
       );
-      var value = await Geolocator.distanceBetween(location.latitude,
+      var value = Geolocator.distanceBetween(location.latitude,
           location.longitude, position.latitude, position.longitude);
       this.distance.value = value;
       // print('her kommer avstanden fra avstand');
