@@ -158,21 +158,24 @@ class _SightPageState extends State<SightPage> {
                         SizedBox(
                           width: 4,
                         ),
-                        (widget.sight.distance != 0)
-                            ? Obx(
-                                child: Text(
-                                  // 'Distance: ${widget.sight.distance.round()} m',
-                                  'Distance: ${widget.sight.calculateDistance()} m',
-
-                                  style: TextStyle(
-                                      color: Colors.grey[600], fontSize: 13),
-                                ),
-                              )
-                            : Text(
+                        FutureBuilder(
+                          future: widget.sight.avstand,
+                          builder: (ctx, snapshot) {
+                            if (snapshot.hasData) {
+                              return Text(
+                                'Distance: ${snapshot.data.toString()} m',
+                                style: TextStyle(
+                                    color: Colors.grey[600], fontSize: 13),
+                              );
+                            } else {
+                              return Text(
                                 'Location disabled',
                                 style: TextStyle(
                                     color: Colors.grey[300], fontSize: 12),
-                              ),
+                              );
+                            }
+                          },
+                        ),
                       ],
                     ),
                   ),

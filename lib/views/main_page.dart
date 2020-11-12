@@ -146,12 +146,11 @@ class MainPage extends StatelessWidget {
                                 ),
 
                                 FutureBuilder(
-                                  future: sight.calculateDistance(),
+                                  future: sight.avstand,
                                   builder: (ctx, snapshot) {
                                     if (snapshot.hasData) {
                                       return Text(
-                                        // '${sight.distance.round().toString()} m',
-                                        '${sight.distance.toString()} m',
+                                        '${snapshot.data.toString()} m',
                                         style: TextStyle(
                                           color: Colors.black,
                                           fontWeight: FontWeight.w200,

@@ -37,7 +37,7 @@ class SightsController extends GetxController {
       sortIcon.value = Icon(Icons.sort_by_alpha);
       sortLabel.value = 'Name';
     } else if (sortIndex.value == 2) {
-      sightList.sort((b, a) => b.distance.compareTo(a.distance));
+      sightList.sort((b, a) => b.distance.value.compareTo(a.distance.value));
       colorVariable.value = Colors.red[900];
       sortIcon.value = Icon(Icons.directions_walk);
       sortLabel.value = 'Distance';

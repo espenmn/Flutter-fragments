@@ -16,7 +16,9 @@ class Sight {
   final String url;
   bool dontAlertMe;
   bool startSetting;
-  double distance;
+  // double distance;
+
+  Rx<double> distance = Rx<double>();
 
   Sight({
     this.name,
@@ -27,17 +29,20 @@ class Sight {
     this.rating,
     this.icon,
     this.dontAlertMe,
-    this.distance,
   });
 
-  Future calculateDistance() async {
+  Future get avstand async {
     try {
       //pass
-      var value = await Geolocator.distanceBetween(
-          location.latitude, location.longitude, 37.78584, 122);
-      this.distance = value;
-      print(value);
-      return value;
+      Position position = await GeolocatorPlatform.instance.getCurrentPosition(
+        desiredAccuracy: LocationAccuracy.best,
+      );
+      var value = await Geolocator.distanceBetween(location.latitude,
+          location.longitude, position.latitude, position.longitude);
+      this.distance.value = value;
+      // print('her kommer avstanden fra avstand');
+      // print(value);
+      return value.round();
     } catch (e) {
       print(e);
     }

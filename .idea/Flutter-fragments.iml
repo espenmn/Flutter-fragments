@@ -3,6 +3,7 @@
   <component name="FacetManager">
     <facet type="android" name="Android">
       <configuration>
+        <option name="ALLOW_USER_CONFIGURATION" value="false" />
         <option name="GEN_FOLDER_RELATIVE_PATH_APT" value="/../../Flutter-fragments/gen" />
         <option name="GEN_FOLDER_RELATIVE_PATH_AIDL" value="/../../Flutter-fragments/gen" />
         <option name="MANIFEST_FILE_RELATIVE_PATH" value="/../../Flutter-fragments/AndroidManifest.xml" />
@@ -44,6 +45,12 @@
       <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/shared_preferences/example/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/shared_preferences/example/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/shared_preferences/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/url_launcher/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/url_launcher/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/url_launcher/build" />
+      <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/url_launcher/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/url_launcher/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/url_launcher/example/build" />
       <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/vibration/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/vibration/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/vibration/build" />
