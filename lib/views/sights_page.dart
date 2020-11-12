@@ -34,7 +34,8 @@ class _SightPageState extends State<SightPage> {
   @override
   void initState() {
     readFontSize();
-    //_updateDistances();
+
+    // _updateDistances();
     // geolocator
     //     .getPositionStream(LocationOptions(
     //         accuracy: LocationAccuracy.best,
@@ -158,10 +159,14 @@ class _SightPageState extends State<SightPage> {
                           width: 4,
                         ),
                         (widget.sight.distance != 0)
-                            ? Text(
-                                'Distance: ${widget.sight.distance.round()} m',
-                                style: TextStyle(
-                                    color: Colors.grey[600], fontSize: 13),
+                            ? Obx(
+                                child: Text(
+                                  // 'Distance: ${widget.sight.distance.round()} m',
+                                  'Distance: ${widget.sight.calculateDistance()} m',
+
+                                  style: TextStyle(
+                                      color: Colors.grey[600], fontSize: 13),
+                                ),
                               )
                             : Text(
                                 'Location disabled',

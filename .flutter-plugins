@@ -1,0 +1,19 @@
+# This is a generated file; do not edit or check into version control.
+flutter_plugin_android_lifecycle=/Users/rolf/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-1.0.11/
+geocoder=/Users/rolf/.pub-cache/hosted/pub.dartlang.org/geocoder-0.2.1/
+geolocator=/Users/rolf/.pub-cache/hosted/pub.dartlang.org/geolocator-6.1.6/
+google_maps_flutter=/Users/rolf/.pub-cache/hosted/pub.dartlang.org/google_maps_flutter-1.0.6/
+path_provider_linux=/Users/rolf/.pub-cache/hosted/pub.dartlang.org/path_provider_linux-0.0.1+2/
+path_provider_windows=/Users/rolf/.pub-cache/hosted/pub.dartlang.org/path_provider_windows-0.0.4+3/
+shared_preferences=/Users/rolf/.pub-cache/hosted/pub.dartlang.org/shared_preferences-0.5.12+4/
+shared_preferences_linux=/Users/rolf/.pub-cache/hosted/pub.dartlang.org/shared_preferences_linux-0.0.2+4/
+shared_preferences_macos=/Users/rolf/.pub-cache/hosted/pub.dartlang.org/shared_preferences_macos-0.0.1+11/
+shared_preferences_web=/Users/rolf/.pub-cache/hosted/pub.dartlang.org/shared_preferences_web-0.1.2+7/
+shared_preferences_windows=/Users/rolf/.pub-cache/hosted/pub.dartlang.org/shared_preferences_windows-0.0.1+3/
+url_launcher=/Users/rolf/.pub-cache/hosted/pub.dartlang.org/url_launcher-5.7.10/
+url_launcher_linux=/Users/rolf/.pub-cache/hosted/pub.dartlang.org/url_launcher_linux-0.0.1+4/
+url_launcher_macos=/Users/rolf/.pub-cache/hosted/pub.dartlang.org/url_launcher_macos-0.0.1+9/
+url_launcher_web=/Users/rolf/.pub-cache/hosted/pub.dartlang.org/url_launcher_web-0.1.5+1/
+url_launcher_windows=/Users/rolf/.pub-cache/hosted/pub.dartlang.org/url_launcher_windows-0.0.1+3/
+vibration=/Users/rolf/.pub-cache/hosted/pub.dartlang.org/vibration-1.7.2/
+vibration_web=/Users/rolf/.pub-cache/hosted/pub.dartlang.org/vibration_web-1.6.2/
