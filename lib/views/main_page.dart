@@ -15,6 +15,7 @@ class MainPage extends StatelessWidget {
   final placesController = Get.put(SightsController());
   final locationController = Get.put(LocationController());
   final prefsController = Get.put(PrefsController());
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -86,6 +87,7 @@ class MainPage extends StatelessWidget {
                                     color: Colors.green,
                                   ),
                                 ),
+
                                 SizedBox(width: 4),
                                 // GetX<PrefsController>(builder: (controller) {
                                 //   return FutureBuilder(
